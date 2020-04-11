@@ -1,13 +1,11 @@
-//package hellojpa;
-//
-//import relationShipJpa.Member;
+//package relationShipJpa;
 //
 //import javax.persistence.EntityManager;
 //import javax.persistence.EntityManagerFactory;
 //import javax.persistence.EntityTransaction;
 //import javax.persistence.Persistence;
 //
-//public class JpaMain {
+//public class RelationJpaMain {
 //    public static void main(String[] args) {
 //        EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 //        EntityManager em = emf.createEntityManager();
@@ -17,17 +15,10 @@
 //
 //        //스프링과 함께쓰면 이걸 에러케치를 다 해줌
 //        try{
-//            //삽입
-//            Member member = new Member();
-//            member.setId(1L);
-//            member.setName("hello");
-//            em.persist(member);
 //
-//            //찾기
-//            Member findMember = em.find(Member.class, 1L);
+//            Order order = new Order();
+//            order.addOrderItem(new OrderItem());
 //
-//            //삭제
-//            em.remove(member);
 //            tx.commit();
 //        }catch(Exception e) {
 //            tx.rollback();
